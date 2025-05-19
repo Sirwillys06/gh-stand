@@ -423,93 +423,167 @@ body {
     margin-left: -1em;
 }
 
-/* Galería con Swiper */
+/* ============ GALERÍA ADAPTADA ============ */
 .gallery {
-    padding: 5rem 5%;
+    padding: 3rem 5%;
     background-color: var(--white);
-    position: relative;
+}
+
+.gallery-subtitle {
+    color: var(--black);
+    opacity: 0.8;
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+    text-align: center;
 }
 
 .swiper-container {
     width: 100%;
-    height: 500px;
-    margin: 3rem auto;
-    overflow: hidden;
-    border-radius: 10px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 .swiper-slide {
+    width: 300px; /* Ancho fijo para cada slide */
+    height: auto;
+    margin-right: 15px;
+}
+
+.slide-content {
     position: relative;
+    border-radius: 8px;
     overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    height: 100%;
 }
 
 .swiper-slide img {
     width: 100%;
-    height: 100%;
+    height: 200px; /* Altura fija para uniformidad */
     object-fit: cover;
-    transition: transform 0.5s;
+    display: block;
 }
 
-.swiper-slide:hover img {
-    transform: scale(1.05);
-}
-
-/* Info que aparece al hacer hover */
 .image-info {
-    position: absolute;
-    bottom: -100%;
-    left: 0;
-    width: 100%;
-    background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
-    color: white;
-    padding: 2rem;
-    transition: bottom 0.4s ease;
-}
-
-.swiper-slide:hover .image-info {
-    bottom: 0;
+    padding: 1.2rem;
+    background: var(--white);
+    border-top: 3px solid var(--mustard);
 }
 
 .image-info h3 {
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+    margin-bottom: 0.3rem;
+    color: var(--black);
 }
 
 .image-info p {
-    margin-bottom: 1rem;
-    opacity: 0.9;
+    font-size: 0.9rem;
+    color: var(--black);
+    opacity: 0.8;
+    margin-bottom: 0.8rem;
 }
 
 .btn-small {
     display: inline-block;
     background-color: var(--mustard);
     color: var(--black);
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
+    padding: 0.4rem 0.8rem;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: 600;
     text-decoration: none;
-    font-weight: bold;
-    font-size: 0.9rem;
+    transition: all 0.3s;
 }
 
-/* Flechas y paginación */
-.swiper-button-next, .swiper-button-prev {
+.btn-small:hover {
+    background-color: var(--mustard-dark);
+}
+
+/* Flechas de navegación */
+.swiper-button-next, 
+.swiper-button-prev {
     color: var(--mustard) !important;
-    background: rgba(0, 0, 0, 0.5);
-    width: 50px;
-    height: 50px;
+    background: rgba(0, 0, 0, 0.7);
+    width: 36px;
+    height: 36px;
     border-radius: 50%;
     transition: all 0.3s;
 }
 
-.swiper-button-next:hover, .swiper-button-prev:hover {
+.swiper-button-next:hover, 
+.swiper-button-prev:hover {
     background: var(--mustard);
     color: white !important;
+}
+
+/* Paginación */
+.swiper-pagination-bullet {
+    background: var(--soft-gray);
+    opacity: 1;
 }
 
 .swiper-pagination-bullet-active {
     background: var(--mustard) !important;
 }
+.swiper-wrapper {
+    display: flex;
+}
+
+.swiper-slide {
+    width: auto !important; /* Permitir que cada slide tenga ancho dinámico */
+    flex-shrink: 0;
+    margin-right: 15px;
+}
+
+/* Añade esto a tu CSS existente */
+.swiper-container {
+    overflow: hidden;
+    padding: 10px 0; /* Espacio para sombras */
+}
+
+.swiper-wrapper {
+    transition-timing-function: linear !important; /* Movimiento más suave */
+}
+
+.swiper-slide {
+    transition: transform 0.3s ease;
+}
+
+/* Efecto hover mejorado */
+.swiper-slide:hover {
+    transform: scale(1.03);
+    z-index: 10;
+}
+
+/* Para pantallas pequeñas */
+@media (max-width: 640px) {
+    .swiper-slide {
+        width: 85% !important;
+        margin: 0 auto;
+    }
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+    .swiper-container {
+        padding: 0 10px;
+    }
+    
+    .swiper-slide {
+        width: 280px;
+    }
+    
+    .swiper-slide img {
+        height: 180px;
+    }
+    
+    .image-info {
+        padding: 1rem;
+    }
+}
+
 
 /* Contacto */
 .contact {
