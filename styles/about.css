@@ -1,0 +1,98 @@
+/* Sección Sobre Nosotros */
+.about {
+    padding: 5rem 5%;
+    background-color: var(--white);
+}
+
+.about-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.about-content h2 {
+    font-size: 2.5rem;
+    color: var(--black);
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.highlight-text {
+    font-size: 1.5rem;
+    color: var(--black);
+    margin-bottom: 2rem;
+    font-weight: 300;
+}
+
+.highlight-text span {
+    color: var(--mustard);
+    font-weight: 600;
+}
+
+.about-description p {
+    margin-bottom: 1.5rem;
+    color: var(--black);
+    opacity: 0.9;
+}
+
+.about-features {
+    list-style: none;
+    margin: 2rem 0;
+}
+
+.about-features li {
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    color: var(--black);
+}
+
+.about-features i {
+    color: var(--mustard);
+    font-size: 1.2rem;
+}
+
+.experience-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 1rem;
+    background-color: var(--soft-gray);
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    margin-top: 1rem;
+}
+
+.experience-badge span {
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--mustard);
+}
+
+.experience-badge p {
+    margin: 0;
+    font-size: 1rem;
+    color: var(--black);
+    opacity: 0.8;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .about-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .about-image {
+        order: 2;
+    }
+}

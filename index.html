@@ -5,13 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GH Stand - Soluciones Profesionales</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/styles/hero-banner.css">
+    <link rel="stylesheet" href="/styles/servicios.css">
+    <link rel="stylesheet" href="/styles/reseñas.css">
+    <link rel="stylesheet" href="/styles/about.css">
+    <link rel="stylesheet" href="/styles/contact.css">
+    <link rel="stylesheet" href="/styles/footer.css">
+    <link rel="stylesheet" href="styles/gallery.css">
+    <link rel="stylesheet" href="/styles/reseñas.css">
+    <link rel="stylesheet" href="/styles/variables.css">
+    <link rel="stylesheet" href="styles/header.css">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-    <!-- Swiper JS -->
+   
+<!-- Swiper CSS -->
+
+
 <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+
 
 
 <!-- styles para el contenedor -->
@@ -90,8 +106,7 @@
             <h3>Diseño Integral</h3>
             <ul class="service-features">
                 <li>Diseño industrial y gráfico</li>
-                <li>Branding visual y conceptual</li>
-                <li>Diseño de interiores comerciales</li>
+                <li>Branding visual y conceptual</li> 
                 <li>Creación de experiencias inmersivas</li>
             </ul>
         </div>
@@ -122,52 +137,111 @@
     </div>
 </section>
 
+<!-- Sección Galería -->
 <section id="gallery" class="gallery">
+  <div class="gallery-header">
     <h2>Trabajos Recientes</h2>
     <p class="gallery-subtitle">Capturas reales de nuestros proyectos</p>
-    
-    <div class="swiper-container">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide">
-                <div class="slide-content">
-                    <img src="img/galeria/stand1.jpg" alt="Stand corporativo Samsung">
-                    <div class="image-info">
-                        <h3>Stand Samsung ExpoTech</h3>
-                        <p>Diseño modular eco-friendly</p>
-                        <a href="#contact" class="btn-small">Cotizar proyecto similar</a>
-                    </div>
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="slide-content">
-                    <img src="img/galeria/stand2.jpg" alt="Stand Coca-Cola">
-                    <div class="image-info">
-                        <h3>Experiencia Coca-Cola</h3>
-                        <p>Interactivo con pantallas táctiles</p>
-                        <a href="#contact" class="btn-small">Cotizar proyecto similar</a>
-                    </div>
-                </div>
-            </div>
-            
-      
-        
+  </div>
 
+  <!-- Swiper Container -->
+  <div class="swiper-container">
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <!-- Slide 1 -->
+        <div class="swiper-slide">
+          <div class="slide-content">
+            <div class="image-container">
+              <img src="img/banner-img.png" alt="Stand corporativo Samsung" class="swiper-lazy"/>
+              <div class="swiper-lazy-preloader"></div>
+            </div>
+            <div class="image-info">
+              <h3>Stand Samsung ExpoTech</h3>
+              <p>Diseño modular eco-friendly</p>
+              <a href="#contact" class="btn-small">Cotizar proyecto similar</a>
+            </div>
+          </div>
+        </div>
+
+          <!-- Slide 1 -->
+        <div class="swiper-slide">
+          <div class="slide-content">
+            <div class="image-container">
+              <img src="img/banner-img.png" alt="Stand corporativo Samsung" class="swiper-lazy"/>
+              <div class="swiper-lazy-preloader"></div>
+            </div>
+            <div class="image-info">
+              <h3>Stand Samsung ExpoTech</h3>
+              <p>Diseño modular eco-friendly</p>
+              <a href="#contact" class="btn-small">Cotizar proyecto similar</a>
+            </div>
+          </div>
+        </div>
+
+          <!-- Slide 1 -->
+        <div class="swiper-slide">
+          <div class="slide-content">
+            <div class="image-container">
+              <img src="img/banner-img.png" alt="Stand corporativo Samsung" class="swiper-lazy"/>
+              <div class="swiper-lazy-preloader"></div>
+            </div>
+            <div class="image-info">
+              <h3>Stand Samsung ExpoTech</h3>
+              <p>Diseño modular eco-friendly</p>
+              <a href="#contact" class="btn-small">Cotizar proyecto similar</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="swiper-slide">
+          <div class="slide-content">
+            <div class="image-container">
+              <img src="img/banner-img.png" alt="Stand Coca-Cola" class="swiper-lazy"/>
+              <div class="swiper-lazy-preloader"></div>
+            </div>
+            <div class="image-info">
+              <h3>Experiencia Coca-Cola</h3>
+              <p>Interactivo con pantallas táctiles</p>
+              <a href="#contact" class="btn-small">Cotizar proyecto similar</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Más slides pueden agregarse aquí -->
+      </div>
+
+      <!-- Controles -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+      
+      <!-- Barra de progreso para slides largos -->
+      <div class="swiper-scrollbar"></div>
     </div>
+  </div>
 </section>
 
 <section id="contact" class="contact">
     <h2>Contáctanos</h2>
+    <p style="max-width: 700px; margin: 0 auto 20px; font-size: 1.1rem; line-height: 1.6; color: #333;">
+        En <strong>GH Stand</strong> contamos con más de 10 años de experiencia creando espacios que comunican y marcan la diferencia. Confía en un equipo profesional, responsable y comprometido con la excelencia. Escríbenos y hagamos realidad tu próximo proyecto.
+    </p>
+    
     <form class="contact-form">
         <input type="text" placeholder="Nombre" required>
         <input type="email" placeholder="Correo" required>
         <textarea placeholder="Mensaje" required></textarea>
         <button type="submit" class="btn">Enviar</button>
     </form>
+    
     <div class="contact-info">
         <p><i class="fas fa-phone"></i>+57 310 5109125</p>
         <p><i class="fas fa-envelope"></i>info.ghstand@gmail.com</p>
     </div>
 </section>
+
+
 
 <!-- Sección de Reseñas - Antes del footer -->
 <section id="reviews" class="reviews">
@@ -242,6 +316,79 @@
     </a>
 </footer>
 
+<!-- JavaScript con animaciones mejoradas -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const swiper = new Swiper('.mySwiper', {
+    // Configuración básica
+    loop: true,
+    lazy: true,
+    grabCursor: true,
+    centeredSlides: true,
+    spaceBetween: 30,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false,
+    },
+    
+    // Efecto de transición
+    effect: 'creative',
+    creativeEffect: {
+      prev: {
+        shadow: true,
+        translate: [0, 0, -400],
+        opacity: 0,
+      },
+      next: {
+        translate: ['100%', 0, 0],
+      },
+    },
+    
+    // Paginación
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+      dynamicBullets: true,
+    },
+    
+    // Navegación
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    
+    // Breakpoints responsive
+    breakpoints: {
+      640: {
+        slidesPerView: 1,
+      },
+      768: {
+        slidesPerView: 1.2,
+      },
+      1024: {
+        slidesPerView: 1.5,
+      },
+    }
+  });
+  
+  // Efecto hover para desktop
+  if (window.innerWidth > 768) {
+    const slides = document.querySelectorAll('.swiper-slide');
+    
+    slides.forEach(slide => {
+      slide.addEventListener('mouseenter', () => {
+        swiper.autoplay.stop();
+      });
+      
+      slide.addEventListener('mouseleave', () => {
+        swiper.autoplay.start();
+      });
+    });
+  }
+});
+</script>
+
+
 
 <script>
     AOS.init({
@@ -249,27 +396,12 @@
         once: true  // Las animaciones solo se ejecutan una vez
     });
 </script>
-<script>
-    const swiper = new Swiper('.swiper-container', {
-        loop: true,
-        autoplay: {
-            delay: 3000, // cambia de imagen cada 3 segundos
-            disableOnInteraction: false,
-        },
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-        },
-    });
-</script>
+
 
     <!-- Scripts -->
+
 <script src="js/menu.js" defer></script>
-<script src="js/gallery.js" defer></script>
+
 <script src="js/scroll.js" defer></script>
 <script src="js/swiper.js" defer></script>
 <script src="js/logoEffects.js" defer></script>
