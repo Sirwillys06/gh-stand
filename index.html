@@ -325,30 +325,24 @@ document.addEventListener('DOMContentLoaded', function() {
     lazy: true,
     grabCursor: true,
     centeredSlides: true,
+    slidesPerView: 'auto',
     spaceBetween: 30,
     autoplay: {
       delay: 5000,
       disableOnInteraction: false,
+      pauseOnMouseEnter: true,
     },
     
     // Efecto de transición
-    effect: 'creative',
-    creativeEffect: {
-      prev: {
-        shadow: true,
-        translate: [0, 0, -400],
-        opacity: 0,
-      },
-      next: {
-        translate: ['100%', 0, 0],
-      },
-    },
+    effect: 'slide',
+    speed: 600,
     
     // Paginación
     pagination: {
       el: '.swiper-pagination',
       clickable: true,
       dynamicBullets: true,
+      dynamicMainBullets: 3,
     },
     
     // Navegación
@@ -359,19 +353,18 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Breakpoints responsive
     breakpoints: {
-      640: {
+      320: {
         slidesPerView: 1,
+        spaceBetween: 20
       },
       768: {
-        slidesPerView: 1.2,
-      },
-      1024: {
-        slidesPerView: 1.5,
-      },
+        slidesPerView: 'auto',
+        spaceBetween: 30
+      }
     }
   });
   
-  // Efecto hover para desktop
+  // Pausar al hacer hover (solo desktop)
   if (window.innerWidth > 768) {
     const slides = document.querySelectorAll('.swiper-slide');
     
@@ -385,17 +378,21 @@ document.addEventListener('DOMContentLoaded', function() {
       });
     });
   }
+  
+  // Reiniciar al cambiar de ventana
+  document.addEventListener('visibilitychange', function() {
+    if (document.visibilityState === 'visible') {
+      swiper.autoplay.start();
+    } else {
+      swiper.autoplay.stop();
+    }
+  });
 });
 </script>
 
 
 
-<script>
-    AOS.init({
-        duration: 800,
-        once: true  // Las animaciones solo se ejecutan una vez
-    });
-</script>
+
 
 
     <!-- Scripts -->
