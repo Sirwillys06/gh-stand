@@ -1,0 +1,195 @@
+/* Footer */
+footer {
+    background-color: var(--black);
+    color: var(--white);
+    padding: 3rem 5% 2rem;
+    position: relative;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.footer-brand {
+    text-align: center;
+}
+
+.footer-logo {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--white);
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.footer-logo span {
+    color: var(--mustard);
+}
+
+.footer-logo:hover {
+    opacity: 0.9;
+}
+
+.footer-slogan {
+    margin-top: 0.5rem;
+    opacity: 0.8;
+    font-size: 1rem;
+}
+
+/* Redes Sociales */
+.social-links {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.social-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    color: var(--white);
+    font-size: 1.2rem;
+    transition: all 0.3s;
+    position: relative;
+    overflow: hidden;
+}
+
+.social-links a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: var(--mustard);
+    top: 100%;
+    left: 0;
+    border-radius: 50%;
+    transition: top 0.3s;
+    z-index: -1;
+}
+
+.social-links a:hover {
+    color: var(--black);
+    transform: translateY(-5px);
+}
+
+.social-links a:hover::after {
+    top: 0;
+}
+
+/* WhatsApp específico */
+.social-links a[aria-label="WhatsApp"] {
+    background: rgba(37, 211, 102, 0.2); /* Verde WhatsApp con transparencia */
+}
+
+.social-links a[aria-label="WhatsApp"]::after {
+    background: #25D366; /* Verde WhatsApp sólido */
+}
+
+/* Legal */
+.legal {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.legal p {
+    opacity: 0.7;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.privacy-link {
+    color: var(--mustard);
+    font-size: 0.9rem;
+    text-decoration: none;
+    transition: opacity 0.3s;
+}
+
+.privacy-link:hover {
+    opacity: 0.8;
+    text-decoration: underline;
+}
+
+/* Botón flotante de WhatsApp (solo móvil) */
+.whatsapp-float {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background: #25D366;
+    color: white;
+    border-radius: 50%;
+    font-size: 1.8rem;
+    text-align: center;
+    line-height: 60px;
+    box-shadow: 0 5px 20px rgba(37, 211, 102, 0.3);
+    z-index: 999;
+    transition: all 0.3s;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1) rotate(10deg);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .whatsapp-float {
+        display: block;
+    }
+    
+    .social-links a[aria-label="WhatsApp"] {
+        display: none; /* Oculta WhatsApp en redes del footer en móvil */
+    }
+}
+
+.whatsapp-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25D366;
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    z-index: 999;
+    transition: transform 0.3s;
+}
+
+.whatsapp-btn:hover {
+    transform: scale(1.1);
+}
+
+.hero-logo {
+    position: absolute;
+    width: 200px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.1;
+    z-index: 0;
+}
+
+.hero-logo-img {
+    width: 100%;
+    height: auto;
+    filter: brightness(0) invert(1); /* Logo blanco */
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+}

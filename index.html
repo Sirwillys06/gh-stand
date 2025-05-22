@@ -5,206 +5,379 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GH Stand - Soluciones Profesionales</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/styles/hero-banner.css">
+    <link rel="stylesheet" href="/styles/servicios.css">
+    <link rel="stylesheet" href="/styles/reseñas.css">
+    <link rel="stylesheet" href="/styles/about.css">
+    <link rel="stylesheet" href="/styles/contact.css">
+    <link rel="stylesheet" href="/styles/footer.css">
+    <link rel="stylesheet" href="styles/gallery.css">
+    <link rel="stylesheet" href="/styles/reseñas.css">
+    <link rel="stylesheet" href="/styles/variables.css">
+    <link rel="stylesheet" href="styles/header.css">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-    <!-- Swiper JS -->
+   
+<!-- Swiper CSS -->
+
+
 <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+
 
 
 <!-- styles para el contenedor -->
 </head>
 <body>
-    <!-- Menú de Navegación -->
-    <header>
-        <nav class="navbar">
-            <div class="logo">
-                <a href="#home">GH <span>Stand</span></a>
-            </div>
-            <ul class="nav-links">
-                <li><a href="#home">Inicio</a></li>
-                <li><a href="#services">Servicios</a></li>
-                <li><a href="#gallery">Galería</a></li>
-                <li><a href="#contact">Contacto</a></li>
-            </ul>
-            <div class="burger">
-                <i class="fas fa-bars"></i>
-            </div>
-        </nav>
-    </header>
-
-    <!-- Sección Hero (Inicio) -->
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <h1>Soluciones Profesionales con GH Stand</h1>
-            <p>Calidad, innovación y confianza en cada proyecto.</p>
-            <a href="#contact" class="btn">Contáctanos</a>
+<header class="gh-header">
+    <nav class="navbar">
+        <div class="logo" id="logo">
+            <a href="#home" class="logo-link">
+                <img src="img/logo.png" alt="GH Stand Logo" class="logo-img">
+                <div class="logo-particles"></div>
+            </a>
         </div>
-     
-    </section>
+        <ul class="nav-links">
+            <li class="nav-item"><a href="#home" class="nav-link"><span class="link-text">Inicio</span></a></li>
+            <li class="nav-item"><a href="#services" class="nav-link"><span class="link-text">Servicios</span></a></li>
+            <li class="nav-item"><a href="#gallery" class="nav-link"><span class="link-text">Galería</span></a></li>
+            <li class="nav-item"><a href="#contact" class="nav-link"><span class="link-text">Contacto</span></a></li>
+        </ul>
+        <div class="burger" id="burger">
+            <div class="burger-line top"></div>
+            <div class="burger-line mid"></div>
+            <div class="burger-line bottom"></div>
+        </div>
+    </nav>
+    <div class="header-light"></div>
+</header>
+
+<section id="home" class="hero">
+    <div class="hero-content">
+        <div class="hero-logo">
+            <img src="img/logo.png" alt="GH Stand" class="hero-logo-img">
+        </div>
+        <h1>Transformamos Espacios, Impulsamos Marcas</h1>
+        <p>En GH Stand, convertimos tu visión en una experiencia inolvidable. Diseño, innovación y calidad en cada detalle.</p>
+        <a href="#contact" class="btn">Contáctanos</a>
+    </div>
+</section>
 
 <section id="services" class="services">
     <h2>Nuestros Servicios</h2>
-    <p class="section-subtitle">Soluciones a medida para cada proyecto</p>
-    
+    <p class="section-subtitle">Creamos soluciones impactantes que hacen destacar tu marca</p>
     <div class="services-grid">
-        <!-- Servicio 1: Eventos -->
         <div class="service-card">
-            <div class="service-icon">
-                <i class="fas fa-calendar-alt"></i>
-            </div>
+            <div class="service-icon"><i class="fas fa-calendar-alt"></i></div>
             <h3>Gestión de Eventos</h3>
             <ul class="service-features">
-                <li>Producción integral</li>
-                <li>Coordinación logística</li>
-                <li>Showrooms y ferias</li>
-                <li>Espacios corporativos</li>
+                <li>Organización integral</li>
+                <li>Producción profesional</li>
+                <li>Montaje de ferias y lanzamientos</li>
+                <li>Espacios para activaciones de marca</li>
             </ul>
         </div>
-
-        <!-- Servicio 2: Stands -->
         <div class="service-card">
-            <div class="service-icon">
-                <i class="fas fa-cubes"></i>
-            </div>
+            <div class="service-icon"><i class="fas fa-cubes"></i></div>
             <h3>Diseño de Stands</h3>
             <ul class="service-features">
-                <li>Personalizados y modulares</li>
-                <li>Eco-friendly</li>
-                <li>Outdoor y centros comerciales</li>
-                <li>Branding integrado</li>
+                <li>Diseños personalizados</li>
+                <li>Opciones modulares y sostenibles</li>
+                <li>Stands para exterior e interior</li>
+                <li>Propuestas con alto impacto visual</li>
             </ul>
         </div>
-
-        <!-- Servicio 3: Tecnología -->
         <div class="service-card">
-            <div class="service-icon">
-                <i class="fas fa-qrcode"></i>
-            </div>
+            <div class="service-icon"><i class="fas fa-qrcode"></i></div>
             <h3>Soluciones Digitales</h3>
             <ul class="service-features">
-                <li>Acreditaciones inteligentes</li>
-                <li>Control de acceso</li>
-                <li>Votaciones electrónicas</li>
-                <li>Software especializado</li>
+                <li>Sistemas de acreditación</li>
+                <li>Gestores de acceso</li>
+                <li>Interacción digital y votaciones</li>
+                <li>Apps y software para eventos</li>
             </ul>
         </div>
-
-        <!-- Servicio 4: Diseño -->
         <div class="service-card">
-            <div class="service-icon">
-                <i class="fas fa-pencil-ruler"></i>
-            </div>
+            <div class="service-icon"><i class="fas fa-pencil-ruler"></i></div>
             <h3>Diseño Integral</h3>
             <ul class="service-features">
-                <li>Industrial y gráfico</li>
-                <li>Branding y serialización</li>
-                <li>Interiores y productos</li>
-                <li>Experiencias inmersivas</li>
+                <li>Diseño industrial y gráfico</li>
+                <li>Branding visual y conceptual</li> 
+                <li>Creación de experiencias inmersivas</li>
             </ul>
         </div>
     </div>
-
 </section>
-
 
 <section id="about" class="about">
     <div class="about-container">
-        <!-- Imagen decorativa (reemplaza con foto de equipo o proyecto) -->
         <div class="about-image">
             <img src="img/team-ghstand.jpg" alt="Equipo GH Stand">
         </div>
-        
-        <!-- Contenido textual -->
         <div class="about-content">
-            <h2>SOBRE NOSOTROS</h2>
-            <p class="highlight-text">Líderes en diseño, producción y montaje de <span>stands y eventos corporativos</span></p>
-            
+            <h2>Sobre Nosotros</h2>
+            <p class="highlight-text">Expertos en crear experiencias que marcan la diferencia</p>
             <div class="about-description">
-                <p>En GH Stand combinamos <strong>innovación</strong> y <strong>experiencia</strong> para transformar tus ideas en espacios memorables. Con más de <strong>20 años en el sector</strong>, hemos desarrollado proyectos que destacan por su calidad, funcionalidad y diseño impactante.</p>
-                
+                <p>En GH Stand unimos pasión, creatividad y experiencia para ofrecer soluciones a la medida que fortalecen la imagen de tu marca. Nuestro equipo trabaja con excelencia en cada etapa del proceso: desde la conceptualización hasta la ejecución final.</p>
                 <ul class="about-features">
-                    <li><i class="fas fa-check-circle"></i> Soluciones personalizadas</li>
-                    <li><i class="fas fa-check-circle"></i> Materiales de alta durabilidad</li>
-                    <li><i class="fas fa-check-circle"></i> Logística integral</li>
+                    <li><i class="fas fa-check-circle"></i> Diseños impactantes y funcionales</li>
+                    <li><i class="fas fa-check-circle"></i> Materiales resistentes y sostenibles</li>
+                    <li><i class="fas fa-check-circle"></i> Ejecución puntual y profesional</li>
                 </ul>
             </div>
-            
-            <!-- Badge de años de experiencia -->
             <div class="experience-badge">
                 <span>20+</span>
-                <p>Años de excelencia en el sector</p>
+                <p>Años creando soluciones memorables</p>
             </div>
         </div>
     </div>
-
 </section>
 
- <!-- Sección Galería -->
+<!-- Sección Galería -->
 <section id="gallery" class="gallery">
+  <div class="gallery-header">
     <h2>Trabajos Recientes</h2>
-    <div class="swiper-container">
-        <div class="swiper-wrapper">
+    <p class="gallery-subtitle">Capturas reales de nuestros proyectos</p>
+  </div>
 
-
-            <!-- Imagen 1 (ejemplo) -->
-            <div class="swiper-slide">
-                <img src="img/galeria/stand1.jpg" alt="Stand corporativo Samsung">
-                <div class="image-info">
-                    <h3>Stand Samsung ExpoTech 2023</h3>
-                    <p>Diseño modular eco-friendly | 50m²</p>
-                    <a href="#contact" class="btn-small">¿Quieres uno similar?</a>
-                </div>
+  <!-- Swiper Container -->
+  <div class="swiper-container">
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <!-- Slide 1 -->
+        <div class="swiper-slide">
+          <div class="slide-content">
+            <div class="image-container">
+              <img src="img/banner-img.png" alt="Stand corporativo Samsung" class="swiper-lazy"/>
+         
             </div>
-            
-            <!-- Imagen 2 -->
-            <div class="swiper-slide">
-                <img src="img/galeria/stand2.jpg" alt="Stand Coca-Cola">
-                <div class="image-info">
-                    <h3>Experiencia Coca-Cola</h3>
-                    <p>Interactivo con pantallas táctiles | 80m²</p>
-                    <a href="#contact" class="btn-small">Cotizar proyecto</a>
-                </div>
+            <div class="image-info">
+              <h3>Stand Samsung ExpoTech</h3>
+              <p>Diseño modular eco-friendly</p>
+              <a href="#contact" class="btn-small">Cotizar proyecto similar</a>
             </div>
-            
-            <!-- Más imágenes... -->
+          </div>
         </div>
-        
-        <!-- Flechas de navegación -->
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-        
-        <!-- Paginación -->
-        <div class="swiper-pagination"></div>
+
+          <!-- Slide 1 -->
+        <div class="swiper-slide">
+          <div class="slide-content">
+            <div class="image-container">
+              <img src="img/banner-img.png" alt="Stand corporativo Samsung" class="swiper-lazy"/>
+         
+            </div>
+            <div class="image-info">
+              <h3>Stand Samsung ExpoTech</h3>
+              <p>Diseño modular eco-friendly</p>
+              <a href="#contact" class="btn-small">Cotizar proyecto similar</a>
+            </div>
+          </div>
+        </div>
+
+          <!-- Slide 1 -->
+        <div class="swiper-slide">
+          <div class="slide-content">
+            <div class="image-container">
+              <img src="img/banner-img.png" alt="Stand corporativo Samsung" class="swiper-lazy"/>
+         
+            </div>
+            <div class="image-info">
+              <h3>Stand Samsung ExpoTech</h3>
+              <p>Diseño modular eco-friendly</p>
+              <a href="#contact" class="btn-small">Cotizar proyecto similar</a>
+            </div>
+          </div>
+        </div>
+
+          <!-- Slide 1 -->
+        <div class="swiper-slide">
+          <div class="slide-content">
+            <div class="image-container">
+              <img src="img/banner-img.png" alt="Stand corporativo Samsung" class="swiper-lazy"/>
+         
+            </div>
+            <div class="image-info">
+              <h3>Stand Samsung ExpoTech</h3>
+              <p>Diseño modular eco-friendly</p>
+              <a href="#contact" class="btn-small">Cotizar proyecto similar</a>
+            </div>
+          </div>
+        </div>
+  <!-- Slide 1 -->
+        <div class="swiper-slide">
+          <div class="slide-content">
+            <div class="image-container">
+              <img src="img/banner-img.png" alt="Stand corporativo Samsung" class="swiper-lazy"/>
+         
+            </div>
+            <div class="image-info">
+              <h3>Stand Samsung ExpoTech</h3>
+              <p>Diseño modular eco-friendly</p>
+              <a href="#contact" class="btn-small">Cotizar proyecto similar</a>
+            </div>
+          </div>
+        </div>
+  <!-- Slide 1 -->
+        <div class="swiper-slide">
+          <div class="slide-content">
+            <div class="image-container">
+              <img src="img/banner-img.png" alt="Stand corporativo Samsung" class="swiper-lazy"/>
+         
+            </div>
+            <div class="image-info">
+              <h3>Stand Samsung ExpoTech</h3>
+              <p>Diseño modular eco-friendly</p>
+              <a href="#contact" class="btn-small">Cotizar proyecto similar</a>
+            </div>
+          </div>
+        </div>
+  <!-- Slide 1 -->
+        <div class="swiper-slide">
+          <div class="slide-content">
+            <div class="image-container">
+              <img src="img/banner-img.png" alt="Stand corporativo Samsung" class="swiper-lazy"/>
+         
+            </div>
+            <div class="image-info">
+              <h3>Stand Samsung ExpoTech</h3>
+              <p>Diseño modular eco-friendly</p>
+              <a href="#contact" class="btn-small">Cotizar proyecto similar</a>
+            </div>
+          </div>
+        </div>
+  <!-- Slide 1 -->
+        <div class="swiper-slide">
+          <div class="slide-content">
+            <div class="image-container">
+              <img src="img/banner-img.png" alt="Stand corporativo Samsung" class="swiper-lazy"/>
+         
+            </div>
+            <div class="image-info">
+              <h3>Stand Samsung ExpoTech</h3>
+              <p>Diseño modular eco-friendly</p>
+              <a href="#contact" class="btn-small">Cotizar proyecto similar</a>
+            </div>
+          </div>
+        </div>
+  <!-- Slide 1 -->
+        <div class="swiper-slide">
+          <div class="slide-content">
+            <div class="image-container">
+              <img src="img/banner-img.png" alt="Stand corporativo Samsung" class="swiper-lazy"/>
+         
+            </div>
+            <div class="image-info">
+              <h3>Stand Samsung ExpoTech</h3>
+              <p>Diseño modular eco-friendly</p>
+              <a href="#contact" class="btn-small">Cotizar proyecto similar</a>
+            </div>
+          </div>
+        </div>
+  <!-- Slide 1 -->
+        <div class="swiper-slide">
+          <div class="slide-content">
+            <div class="image-container">
+              <img src="img/banner-img.png" alt="Stand corporativo Samsung" class="swiper-lazy"/>
+         
+            </div>
+            <div class="image-info">
+              <h3>Stand Samsung ExpoTech</h3>
+              <p>Diseño modular eco-friendly</p>
+              <a href="#contact" class="btn-small">Cotizar proyecto similar</a>
+            </div>
+          </div>
+        </div>
+
+
+
+     
+
+        <!-- Más slides pueden agregarse aquí -->
+      </div>
+
+      <!-- Controles -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+      
+      <!-- Barra de progreso para slides largos -->
+      <div class="swiper-scrollbar"></div>
     </div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <h2 class="section-title">Contáctanos</h2>
+  
+  <div class="contact-description">
+    <p>
+      En <strong>GH Stand</strong> creamos espacios impactantes que conectan con tu público y elevan tu marca. 
+      Somos el aliado que transforma tus ideas en experiencias memorables. 
+      <strong>¡Contáctanos y llevemos tu proyecto al siguiente nivel!</strong>
+    </p>
+  </div>
+
+ <form class="contact-form" id="contactForm">
+  <input type="text" id="nombre" placeholder="Nombre completo" required>
+  <input type="email" id="correo" placeholder="Correo electrónico" required>
+  <input type="number" id="telefono" placeholder="Número de teléfono" required>
+  <textarea id="mensaje" placeholder="Escribe tu mensaje aquí..." required></textarea>
+  <button type="submit" class="btn">Enviar mensaje</button>
+</form>
+
+  <div class="contact-info">
+    <p><i class="fas fa-phone-alt"></i> +57 310 5109125</p>
+    <p><i class="fas fa-envelope"></i> info.ghstand@gmail.com</p>
+  </div>
 </section>
 
 
 
-    <!-- Sección Contacto -->
-    <section id="contact" class="contact">
-        <h2>Contáctanos</h2>
-        <form class="contact-form">
-            <input type="text" placeholder="Nombre" required>
-            <input type="email" placeholder="Correo" required>
-            <textarea placeholder="Mensaje" required></textarea>
-            <button type="submit" class="btn">Enviar</button>
-        </form>
-        <div class="contact-info">
-            <p><i class="fas fa-phone"></i>+57 310 5109125</p>
-            <p><i class="fas fa-envelope"></i>info.ghstand@gmail.com</p>
+<!-- Sección de Reseñas - Antes del footer -->
+<section id="reviews" class="reviews">
+    <div class="reviews-container">
+        <h2>Lo que dicen nuestros clientes</h2>
+        <p class="reviews-subtitle">Tu opinión nos ayuda a seguir mejorando</p>
+        
+        <div class="reviews-content">
+            <div class="reviews-text">
+                <i class="fas fa-quote-left quote-icon"></i>
+                <p>En GH Stand valoramos cada experiencia compartida con nuestros clientes. Nos enorgullece haber creado stands y eventos que superan expectativas.</p>
+                
+                <div class="rating">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>Basado en <strong>25+ reseñas</strong> en Google</p>
+                </div>
+            </div>
+            
+            <div class="cta-review">
+                <h3>¿Has trabajado con nosotros?</h3>
+                <p>Comparte tu experiencia y ayúdanos a seguir creciendo</p>
+                <a href="https://g.page/r/CS2wDxaEkiggEAI/review" target="_blank" class="btn btn-review">
+                    <i class="fab fa-google"></i> Dejar reseña en Google
+                </a>
+            </div>
         </div>
-     
-    </section>
+    </div>
+</section>
 
 <footer>
     <div class="footer-content">
+    
         <!-- Logo y descripción -->
         <div class="footer-brand">
-            <a href="#home" class="footer-logo">GH <span>Stand</span></a>
-            <p class="footer-slogan">Diseño y producción de stands que marcan la diferencia</p>
+            <img src="img/logo.png" alt="GH Stand" class="footer-logo">
+
         </div>
 
         <!-- Redes Sociales -->
@@ -230,32 +403,111 @@
         </div>
     </div>
 
+
     <!-- Botón flotante de WhatsApp (versión móvil) -->
     <a href="https://wa.me/573105109125" class="whatsapp-float" target="_blank" aria-label="Chat WhatsApp">
         <i class="fab fa-whatsapp"></i>
     </a>
 </footer>
 
+<!-- JavaScript con animaciones mejoradas -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const swiper = new Swiper('.mySwiper', {
+    // Configuración básica
+    loop: true,
+    lazy: true,
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: 'auto',
+    spaceBetween: 30,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false,
+      pauseOnMouseEnter: true,
+    },
+    
+    // Efecto de transición
+    effect: 'slide',
+    speed: 600,
+    
+    // Paginación
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+      dynamicBullets: true,
+      dynamicMainBullets: 3,
+    },
+    
+    // Navegación
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    
+    // Breakpoints responsive
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 20
+      },
+      768: {
+        slidesPerView: 'auto',
+        spaceBetween: 30
+      }
+    }
+  });
+  
+  // Pausar al hacer hover (solo desktop)
+  if (window.innerWidth > 768) {
+    const slides = document.querySelectorAll('.swiper-slide');
+    
+    slides.forEach(slide => {
+      slide.addEventListener('mouseenter', () => {
+        swiper.autoplay.stop();
+      });
+      
+      slide.addEventListener('mouseleave', () => {
+        swiper.autoplay.start();
+      });
+    });
+  }
+  
+  // Reiniciar al cambiar de ventana
+  document.addEventListener('visibilitychange', function() {
+    if (document.visibilityState === 'visible') {
+      swiper.autoplay.start();
+    } else {
+      swiper.autoplay.stop();
+    }
+  });
+});
+</script>
 
 
 
-
-
-
-
-
-
-
-
-    <!-- Scripts -->
-    <script src="script.js"></script>
-
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
     AOS.init({
         duration: 800,
         once: true  // Las animaciones solo se ejecutan una vez
     });
 </script>
+
+
+    <!-- Scripts -->
+
+<script src="js/menu.js" defer></script>
+
+<script src="js/scroll.js" defer></script>
+<script src="js/swiper.js" defer></script>
+<script src="js/logoEffects.js" defer></script>
+<script src="js/headerLight.js" defer></script>
+<script src="js/navHoverEffects.js" defer></script>
+<script src="js/contac.js" defer></script>
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
 </body>
 </html>

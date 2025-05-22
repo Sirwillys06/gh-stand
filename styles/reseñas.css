@@ -1,0 +1,85 @@
+/* ============ SECCIÓN RESEÑAS ============ */
+.reviews {
+    padding: 5rem 5%;
+    background-color: var(--soft-gray);
+    text-align: center;
+}
+
+.reviews-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.reviews-subtitle {
+    color: var(--black);
+    opacity: 0.8;
+    margin-bottom: 3rem;
+    font-size: 1.2rem;
+}
+
+.reviews-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+    text-align: left;
+}
+
+.reviews-text {
+    position: relative;
+    padding: 2rem;
+    background-color: var(--white);
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.quote-icon {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: var(--mustard);
+    font-size: 2rem;
+    opacity: 0.2;
+}
+
+.rating {
+    margin-top: 2rem;
+}
+
+.stars {
+    color: var(--mustard);
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.cta-review {
+    background-color: var(--mustard);
+    padding: 2rem;
+    border-radius: 10px;
+    color: var(--black);
+}
+
+.btn-review {
+    background-color: var(--black);
+    color: var(--white);
+    margin-top: 1.5rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.btn-review:hover {
+    background-color: var(--white);
+    color: var(--black);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .reviews-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .reviews-text, .cta-review {
+        text-align: center;
+    }
+}
