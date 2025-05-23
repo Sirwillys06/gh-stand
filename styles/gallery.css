@@ -1,30 +1,107 @@
-/* Estilos para el carrusel Swiper */
+:root {
+    --primary-color: #dfaa23;  /* Amarillo mostaza principal */
+    --primary-dark: #cca01e;   /* Amarillo mostaza oscuro */
+    --primary-light: #f5cf44;  /* Amarillo mostaza claro */
+    --primary-transparent: rgba(212, 160, 23, 0.1); /* Transparencia para fondos */
+}
+
+/* Estilos para el carrusel Swiper - Versión Amarillo Mostaza */
 .swiper-container {
     width: 100%;
-    padding: 20px 0 40px;
+    padding: 60px 0;
     position: relative;
+    background: linear-gradient(135deg, #faf8f0 0%, #f5f0e1 100%);
     overflow: hidden;
 }
 
+/* Borde decorativo superior */
+.swiper-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--primary-dark), var(--primary-color), var(--primary-light), var(--primary-color), var(--primary-dark));
+    z-index: 1;
+}
+
+/* Encabezado de la galería - Estilo Mostaza */
+.gallery-header {
+    margin-bottom: 40px;
+    text-align: center;
+    position: relative;
+    padding: 0 20px;
+}
+
+.gallery-header h2 {
+    font-size: 1.9rem;
+    font-weight: 700;
+    color: #3a3a3a;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 15px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.05);
+}
+
+.gallery-header h2::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120px;
+    height: 3px;
+    background: linear-gradient(90deg, transparent 0%, var(--primary-color) 50%, transparent 100%);
+}
+
+.gallery-header p.subtitle {
+    font-size: 1.1rem;
+    color: #5a5a5a;
+    max-width: 700px;
+    margin: 15px auto 0;
+    line-height: 1.6;
+}
+
+/* Swiper base - Estilo mejorado */
 .mySwiper {
     width: 100%;
     height: auto;
-    padding-bottom: 30px;
+    padding: 20px 0 50px;
 }
 
 .swiper-slide {
-    width: 80%;
-    max-width: 900px;
-    background: #bab8b8;
-    border-radius: 8px;
+    width: 85%;
+    max-width: 1000px;
+    background: #fff;
+    border-radius: 20px;
     overflow: hidden;
-    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.1);
+    transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+    border: none;
+    position: relative;
+    opacity: 0.9;
+    transform: scale(0.95);
+}
+
+.swiper-slide::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background: linear-gradient(90deg, var(--primary-dark), var(--primary-color));
 }
 
 .swiper-slide-active {
-    transform: scale(1.05);
-    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+    transform: scale(1);
+    opacity: 1;
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.15);
+    z-index: 2;
 }
 
 .slide-content {
@@ -33,128 +110,285 @@
     height: 100%;
 }
 
+/* Contenedor de imagen - Estilo profesional */
 .image-container {
     position: relative;
     width: 100%;
-    height: 400px;
+    height: 500px;
+    background: linear-gradient(135deg, #fcfaf5, #f8f5ec);
+    display: flex;
+    align-items: center;
+    justify-content: center;
     overflow: hidden;
+    padding: 20px;
+}
+
+.image-container::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, rgba(212, 160, 23, 0.3), transparent);
 }
 
 .image-container img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.5s ease;
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+    transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+    filter: drop-shadow(0 5px 15px rgba(0,0,0,0.1));
 }
 
 .swiper-slide:hover .image-container img {
     transform: scale(1.05);
+    filter: drop-shadow(0 10px 25px rgba(0,0,0,0.15));
 }
 
+/* Información - Estilo con acentos mostaza */
 .image-info {
-    padding: 20px;
-    background: #fff;
-    flex-grow: 1;
+    padding: 30px;
+    background: #ffffff;
     display: flex;
     flex-direction: column;
+    gap: 15px;
+    position: relative;
+}
+
+.image-info::before {
+    content: "";
+    position: absolute;
+    top: -15px;
+    left: 40px;
+    width: 30px;
+    height: 30px;
+    background: #fff;
+    transform: rotate(45deg);
+    z-index: 1;
 }
 
 .image-info h3 {
-    margin: 0 0 10px;
-    font-size: 1.5rem;
-    color: #333;
+    margin: 0;
+    font-size: 1.8rem;
+    color: #3a3a3a;
+    font-weight: 700;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.image-info h3::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 3px;
+    background: var(--primary-color);
 }
 
 .image-info p {
-    margin: 0 0 15px;
-    color: #666;
-    flex-grow: 1;
+    margin: 10px 0 0;
+    font-size: 1.05rem;
+    color: #5a5a5a;
+    line-height: 1.7;
 }
 
-.btn-small {
-    display: inline-block;
-    padding: 8px 20px;
-    background: var(--primary-color);
-    color: white;
-    border-radius: 4px;
-    text-align: center;
-    text-decoration: none;
-    transition: background 0.3s ease;
+/* Botón de acción mostaza */
+.image-info .action-btn {
     align-self: flex-start;
+    margin-top: 15px;
+    padding: 12px 25px;
+    background: var(--primary-color);
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(212, 160, 23, 0.3);
+    position: relative;
+    overflow: hidden;
 }
 
-.btn-small:hover {
+.image-info .action-btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+    transition: all 0.6s ease;
+}
+
+.image-info .action-btn:hover {
     background: var(--primary-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(212, 160, 23, 0.4);
 }
 
-/* Controles de navegación */
+.image-info .action-btn:hover::before {
+    left: 100%;
+}
+
+/* Navegación - Estilo mostaza */
 .swiper-button-next, 
 .swiper-button-prev {
-    width: 50px;
-    height: 50px;
-    background: rgba(255,255,255,0.8);
+    width: 56px;
+    height: 56px;
+    background: white;
     border-radius: 50%;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 5px 25px rgba(0,0,0,0.15);
     color: var(--primary-color);
-    transition: all 0.3s ease;
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    z-index: 10;
+    backdrop-filter: blur(2px);
+    border: 1px solid rgba(0,0,0,0.05);
 }
 
 .swiper-button-next:hover, 
 .swiper-button-prev:hover {
     background: var(--primary-color);
     color: white;
+    transform: scale(1.1);
 }
 
 .swiper-button-next::after, 
 .swiper-button-prev::after {
-    font-size: 1.2rem;
+    font-size: 1.8rem;
     font-weight: bold;
 }
 
-/* Paginación */
+/* Paginación - Estilo mostaza */
+.swiper-pagination {
+    bottom: 15px !important;
+}
+
 .swiper-pagination-bullet {
     width: 12px;
     height: 12px;
-    background: #ccc;
+    background: rgba(212, 160, 23, 0.2);
     opacity: 1;
+    margin: 0 8px !important;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.swiper-pagination-bullet::before {
+    content: "";
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    right: -3px;
+    bottom: -3px;
+    border: 1px solid rgba(212, 160, 23, 0.3);
+    border-radius: 50%;
+    opacity: 0;
+    transition: opacity 0.3s ease;
 }
 
 .swiper-pagination-bullet-active {
     background: var(--primary-color);
+    transform: scale(1.2);
 }
 
-/* Efecto de carga */
+.swiper-pagination-bullet-active::before {
+    opacity: 1;
+}
+
+/* Efecto de carga mostaza */
 .swiper-lazy-preloader {
     border-color: var(--primary-color);
     border-top-color: transparent;
+    width: 40px;
+    height: 40px;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-    .swiper-slide {
-        width: 85%;
+
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .gallery-header h2 {
+        font-size: 2.2rem;
     }
     
     .image-container {
-        height: 300px;
+        height: 400px;
+    }
+}
+
+@media (max-width: 768px) {
+    .swiper-container {
+        padding: 40px 0;
+    }
+    
+    .gallery-header h2 {
+        font-size: 1.8rem;
+        padding-bottom: 10px;
+    }
+    
+    .gallery-header p.subtitle {
+        font-size: 1rem;
+    }
+    
+    .swiper-slide {
+        width: 90%;
+    }
+
+    .image-container {
+        height: 350px;
+    }
+
+    .image-info {
+        padding: 25px;
+    }
+    
+    .image-info h3 {
+        font-size: 1.5rem;
+    }
+
+    .image-info p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .gallery-header h2 {
+        font-size: 1.5rem;
+    }
+    
+    .image-container {
+        height: 280px;
+    }
+    
+    .image-info {
+        padding: 20px;
+    }
+    
+    .image-info h3 {
+        font-size: 1.3rem;
+    }
+    
+    .image-info p {
+        font-size: 0.95rem;
+    }
+    
+    .image-info .action-btn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
     }
     
     .swiper-button-next, 
     .swiper-button-prev {
-        display: none;
+        width: 44px;
+        height: 44px;
+    }
+    
+    .swiper-button-next::after, 
+    .swiper-button-prev::after {
+        font-size: 1.4rem;
     }
 }
 
-@media (max-width: 480px) {
-    .swiper-slide {
-        width: 90%;
-    }
-    
-    .image-container {
-        height: 250px;
-    }
-    
-    .image-info h3 {
-        font-size: 1.2rem;
-    }
-}
+
