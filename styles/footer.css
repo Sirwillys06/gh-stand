@@ -193,3 +193,13 @@ footer {
     position: relative;
     z-index: 1;
 }
+
+/* Estilo específico para el botón de ubicación */
+.social-links a[aria-label="Ubicación"] {
+    background: rgba(255, 59, 48, 0.2); /* Rojo con transparencia */
+}
+
+.social-links a[aria-label="Ubicación"]::after {
+    background: #FF3B30; /* Rojo sólido */
+}
+
