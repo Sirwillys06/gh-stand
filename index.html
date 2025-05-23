@@ -3,41 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
- 
-
-
-<!-- Primary Meta Tags -->
     <title>GH Stand | Diseño y Construcción de Stands Personalizados en Cartagena</title>
     <meta name="description" content="Líderes en diseño y construcción de stands personalizados en Cartagena y Barranquilla. 20+ años de experiencia creando stands para eventos corporativos, ferias y exposiciones.">
-    <meta name="keywords" content="stands personalizados Cartagena, diseño de stands Barranquilla, construcción de stands, eventos corporativos, backings publicitarios, escenografías empresariales, letras volumétricas, fabricantes de stands Colombia,Mejores fabricantes de stands en Cartagena,Stand para ferias comerciales en Barranquilla,Diseño de stands premium Colombia,Presupuesto para stand corporativo">
+    
+    <!-- Preload de recursos críticos -->
+    <link rel="preload" href="styles.css" as="style">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style">
+    <link rel="preload" href="https://fonts.googleapis.com" as="font" crossorigin>
+    
+    <!-- Meta Tags SEO -->
+    <meta name="keywords" content="stands personalizados Cartagena, diseño de stands Barranquilla, construcción de stands, eventos corporativos, backings publicitarios, escenografías empresariales, letras volumétricas,escenografias,stand,fabricantes de stand en cartagena,cartagena,eventos,ferias,fabricacion de stand">
     <meta name="author" content="GH Stand">
     <meta name="robots" content="index, follow">
-
+    
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.ghstand.com.co/">
     <meta property="og:title" content="GH Stand | Diseño Profesional de Stands en Cartagena">
     <meta property="og:description" content="Expertos en diseño y construcción de stands personalizados para eventos corporativos en Cartagena y Barranquilla. Más de 20 años de experiencia.">
     <meta property="og:image" content="https://www.ghstand.com.co/img/og-image.jpg">
-
-<!-- Canonical URL -->
+    <meta property="og:site_name" content="GH Stand">
+    <meta property="og:locale" content="es_CO">
+    
+    <!-- Canonical URL -->
     <link rel="canonical" href="https://www.ghstand.com.co/">
-
+    
     <!-- Favicon -->
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
-
-
-  <!-- Preconnects -->
-    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://www.google-analytics.com">
- <!-- AOS (Optimizado) -->
-    <link rel="preload" href="https://unpkg.com/aos@2.3.1/dist/aos.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"></noscript>
-
- <!-- css -->
-    <link rel="stylesheet" href="styles.css">
+    
+    <!-- CSS Consolidado (recomiendo combinar todos en un solo archivo) -->
+   <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="/styles/hero-banner.css">
     <link rel="stylesheet" href="/styles/servicios.css">
     <link rel="stylesheet" href="/styles/reseñas.css">
@@ -48,22 +44,19 @@
     <link rel="stylesheet" href="/styles/variables.css">
     <link rel="stylesheet" href="styles/header.css">
      <link rel="stylesheet" href="styles/proceso.css">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
-
-   
-<!-- Swiper CSS -->
-
-
-<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
-
-
- <!-- Schema Markup -->
+    
+    <!-- Font Awesome (cargado de forma asíncrona) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
+    
+    <!-- AOS CSS (optimizado) -->
+    <link rel="preload" href="https://unpkg.com/aos@2.3.1/dist/aos.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"></noscript>
+    
+    <!-- Swiper CSS (optimizado) -->
+    <link rel="preload" href="https://unpkg.com/swiper/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"></noscript>
+    
+    <!-- Schema Markup -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
@@ -99,251 +92,243 @@
         ]
     }
     </script>
-
-    <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-XXXXXX');</script>
-    <!-- End Google Tag Manager -->
+    
+    <!-- Google Tag Manager (optimizado) -->
+    <script>
+    (function(w,d,s,l,i){
+        w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});
+        var f=d.getElementsByTagName(s)[0], j=d.createElement(s);
+        j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i;
+        f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-XXXXXX');
+    </script>
 </head>
 <body>
-
-
-  <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXX"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
-
-
-<header class="gh-header">
-    <nav class="navbar">
-        <div class="logo" id="logo" >
-            <a href="#home" class="logo-link">
-                <img src="img/logo.png" alt="GH Stand - Transformamos espacios, impulsamos marcas" class="logo-img">
-                <div class="logo-particles"></div>
-            </a>
-        </div>
-        <ul class="nav-links">
-            <li class="nav-item"><a href="#home" class="nav-link"><span class="link-text">Inicio</span></a></li>
-            <li class="nav-item"><a href="#services" class="nav-link"><span class="link-text">Servicios</span></a></li>
-            <li class="nav-item"><a href="#gallery" class="nav-link"><span class="link-text">Galería</span></a></li>
-            <li class="nav-item"><a href="#contact" class="nav-link"><span class="link-text">Contacto</span></a></li>
-            <li class="nav-item"><a href="#process" class="nav-link"><span class="link-text">Proceso</span></a></li>
-          <li class="nav-item"><a href="#footer" class="nav-link"><span class="link-text">Redes Sociales</span></a></li>
-        </ul>
-        <div class="burger" id="burger">
-            <div class="burger-line top"></div>
-            <div class="burger-line mid"></div>
-            <div class="burger-line bottom"></div>
-        </div>
-    </nav>
-    <div class="header-light"></div>
-</header>
-
-<section id="home" class="hero">
-    <div class="hero-content">
-        <div class="hero-logo">
-            <img src="img/logo.png" alt="GH Stand - Transformamos espacios, impulsamos marcas" class="hero-logo-img">
-        </div>
-        <h1>Transformamos Espacios, Impulsamos Marcas</h1>
-        <p>En GH Stand, convertimos tu visión en una experiencia inolvidable. Diseño, innovación y calidad en cada detalle.</p>
-        <a href="#contact" class="btn">Contáctanos</a>
-    </div>
-</section>
-
-<section id="services" class="services">
-    <h2>Nuestros Servicios</h2>
-    <p class="section-subtitle">Creamos soluciones impactantes que hacen destacar tu marca</p>
-    <div class="services-grid">
-
-
-      <div class="service-card">
-            <div class="service-icon"><i class="fas fa-cubes"></i></div>
-            <h3>Servicios Principales</h3>
-            <ul class="service-features">
-                <li>Construcción de Stand personalizados</li>
-                <li>Backings Públicitarios y escenográficos</li>
-                <li>Construcción de figuras corpóreas</li>
-                <li>Letras Volumétricas</li>
-                <li>Escenográfias</li>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXX" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    
+    <header class="gh-header">
+        <nav class="navbar">
+            <div class="logo" id="logo">
+                <a href="#home" class="logo-link">
+                    <img src="img/logo.png" alt="GH Stand - Transformamos espacios, impulsamos marcas" width="120" height="60" class="logo-img">
+                    <div class="logo-particles"></div>
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li class="nav-item"><a href="#home" class="nav-link"><span class="link-text">Inicio</span></a></li>
+                <li class="nav-item"><a href="#services" class="nav-link"><span class="link-text">Servicios</span></a></li>
+                <li class="nav-item"><a href="#gallery" class="nav-link"><span class="link-text">Galería</span></a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link"><span class="link-text">Contacto</span></a></li>
+                <li class="nav-item"><a href="#process" class="nav-link"><span class="link-text">Proceso</span></a></li>
+                <li class="nav-item"><a href="#footer" class="nav-link"><span class="link-text">Redes Sociales</span></a></li>
             </ul>
-        </div>
-
-        <div class="service-card">
-            <div class="service-icon"><i class="fas fa-calendar-alt"></i></div>
-            <h3>Gestión de Eventos</h3>
-            <ul class="service-features">
-                <li>Organización integral</li>
-                <li>Producción profesional</li>
-                <li>Montaje y desmontaje de Stands</li>
-                <li>Espacios para activaciones de marca</li>
-            </ul>
-        </div>
-
-        <div class="service-card">
-            <div class="service-icon"><i class="fas fa-cubes"></i></div>
-            <h3>Diseño de Stands</h3>
-            <ul class="service-features">
-                <li>Diseños personalizados</li>
-                <li>Opciones modulares y sostenibles</li>
-                <li>Stands para exterior e interior</li>
-                <li>Propuestas con alto impacto visual</li>
-            </ul>
-        </div>
-      
-        <div class="service-card">
-            <div class="service-icon"><i class="fas fa-pencil-ruler"></i></div>
-            <h3>Diseño Integral</h3>
-            <ul class="service-features">
-                <li>Diseño industrial y gráfico</li>
-                <li>Branding visual y conceptual</li> 
-                <li>Creación de experiencias inmersivas</li>
-            </ul>
-        </div>
-    </div>
-</section>
-
-<section id="about" class="about">
-    <div class="about-container">
-        <div class="about-image">
-            <img src="img/equipo.jpg" alt="Equipo profesional de GH Stand trabajando en stands corporativos">
-        </div>
-        <div class="about-content">
-            <h2>Sobre Nosotros</h2>
-            <p class="highlight-text">Expertos en crear experiencias que marcan la diferencia</p>
-            <div class="about-description">
-                <p>En GH Stand unimos pasión, creatividad y experiencia para ofrecer soluciones a la medida que fortalecen la imagen de tu marca. Nuestro equipo trabaja con excelencia en cada etapa del proceso: desde la conceptualización hasta la ejecución final.</p>
-                <ul class="about-features">
-                    <li><i class="fas fa-check-circle"></i> Diseños impactantes y funcionales</li>
-                    <li><i class="fas fa-check-circle"></i> Materiales resistentes y sostenibles</li>
-                    <li><i class="fas fa-check-circle"></i> Ejecución puntual y profesional</li>
-                </ul>
+            <div class="burger" id="burger" aria-label="Menú móvil">
+                <div class="burger-line top"></div>
+                <div class="burger-line mid"></div>
+                <div class="burger-line bottom"></div>
             </div>
-            <div class="experience-badge">
-                <span>20+</span>
-                <p>Años de experiencia en el sector</p>
-            </div>
+        </nav>
+        <div class="header-light"></div>
+    </header>
 
-              <div class="experience-badge">
-                <span>250+</span>
-                <p>Proyectos completados</p>
-            </div>
-              <div class="experience-badge">
-                        <span>98%</span>
-                        <p>Clientes satisfechos</p>
-                    </div>
-
-        </div>
-    </div>
-</section>
-
-<section id="process" class="process-section">
-    <div class="process-container">
-        <div class="section-header">
-            <h2>Nuestro Proceso Creativo</h2>
-            <p class="subtitle">Cómo convertimos las ideas en experiencias memorables</p>
-            <div class="header-divider">
-                <div class="divider-line"></div>
-                <div class="divider-icon">
-                    <i class="fas fa-lightbulb"></i>
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <div class="hero-logo">
+                    <img src="img/logo.png" alt="GH Stand - Transformamos espacios, impulsamos marcas" width="180" height="90" class="hero-logo-img" loading="lazy">
                 </div>
-                <div class="divider-line"></div>
+                <h1>Transformamos Espacios, Impulsamos Marcas</h1>
+                <p>En GH Stand, convertimos tu visión en una experiencia inolvidable. Diseño, innovación y calidad en cada detalle.</p>
+                <a href="#contact" class="btn">Contáctanos</a>
             </div>
-        </div>
+        </section>
 
-        <div class="process-steps">
-            <!-- Paso 1 -->
-            <div class="step">
-                <div class="step-content">
-                    <div class="step-number">1</div>
-                    <div class="step-icon">
-                        <i class="fas fa-comments"></i>
-                    </div>
-                    <h3>Consulta Inicial</h3>
-                    <p>Analizamos tus necesidades y objetivos de marca</p>
+        <section id="services" class="services">
+            <h2>Nuestros Servicios</h2>
+            <p class="section-subtitle">Creamos soluciones impactantes que hacen destacar tu marca</p>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-cubes" aria-hidden="true"></i></div>
+                    <h3>Servicios Principales</h3>
+                    <ul class="service-features">
+                        <li>Construcción de Stand personalizados</li>
+                        <li>Backings Públicitarios y escenográficos</li>
+                        <li>Construcción de figuras corpóreas</li>
+                        <li>Letras Volumétricas</li>
+                        <li>Escenográfias</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-calendar-alt" aria-hidden="true"></i></div>
+                    <h3>Gestión de Eventos</h3>
+                    <ul class="service-features">
+                        <li>Organización integral</li>
+                        <li>Producción profesional</li>
+                        <li>Montaje y desmontaje de Stands</li>
+                        <li>Espacios para activaciones de marca</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-cubes" aria-hidden="true"></i></div>
+                    <h3>Diseño de Stands</h3>
+                    <ul class="service-features">
+                        <li>Diseños personalizados</li>
+                        <li>Opciones modulares y sostenibles</li>
+                        <li>Stands para exterior e interior</li>
+                        <li>Propuestas con alto impacto visual</li>
+                    </ul>
+                </div>
+              
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-pencil-ruler" aria-hidden="true"></i></div>
+                    <h3>Diseño Integral</h3>
+                    <ul class="service-features">
+                        <li>Diseño industrial y gráfico</li>
+                        <li>Branding visual y conceptual</li> 
+                        <li>Creación de experiencias inmersivas</li>
+                    </ul>
                 </div>
             </div>
-            
-            <!-- Paso 2 -->
-            <div class="step">
-                <div class="step-content">
-                    <div class="step-number">2</div>
-                    <div class="step-icon">
-                        <i class="fas fa-pencil-ruler"></i>
-                    </div>
-                    <h3>Diseño Conceptual</h3>
-                    <p>Creamos propuestas visuales en 3D personalizadas</p>
-                </div>
-            </div>
-            
-            <!-- Paso 3 -->
-            <div class="step">
-                <div class="step-content">
-                    <div class="step-number">3</div>
-                    <div class="step-icon">
-                        <i class="fas fa-calculator"></i>
-                    </div>
-                    <h3>Valorización</h3>
-                    <p>Elaboramos propuesta económica basada en el diseño</p>
-                </div>
-            </div>
-            
-            <!-- Paso 4 -->
-            <div class="step">
-                <div class="step-content">
-                    <div class="step-number">4</div>
-                    <div class="step-icon">
-                        <i class="fas fa-tools"></i>
-                    </div>
-                    <h3>Desarrollo</h3>
-                    <p>Fabricación con materiales de alta calidad y atención al detalle</p>
-                </div>
-            </div>
-            
-            <!-- Paso 5 -->
-            <div class="step">
-                <div class="step-content">
-                    <div class="step-number">5</div>
-                    <div class="step-icon">
-                        <i class="fas fa-truck"></i>
-                    </div>
-                    <h3>Instalación</h3>
-                    <p>Montaje profesional y eficiente en el lugar del evento</p>
-                </div>
-            </div>
-            
-            <!-- Paso 6 -->
-            <div class="step">
-                <div class="step-content">
-                    <div class="step-number">6</div>
-                    <div class="step-icon">
-                        <i class="fas fa-box-open"></i>
-                    </div>
-                    <h3>Recogida</h3>
-                    <p>Desmontaje del stand en el sitio del evento</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+        </section>
 
+        <section id="about" class="about">
+            <div class="about-container">
+                <div class="about-image">
+                    <img src="img/equipo.jpg" alt="Equipo profesional de GH Stand trabajando en stands corporativos" width="600" height="400" loading="lazy">
+                </div>
+                <div class="about-content">
+                    <h2>Sobre Nosotros</h2>
+                    <p class="highlight-text">Expertos en crear experiencias que marcan la diferencia</p>
+                    <div class="about-description">
+                        <p>En GH Stand unimos pasión, creatividad y experiencia para ofrecer soluciones a la medida que fortalecen la imagen de tu marca. Nuestro equipo trabaja con excelencia en cada etapa del proceso: desde la conceptualización hasta la ejecución final.</p>
+                        <ul class="about-features">
+                            <li><i class="fas fa-check-circle" aria-hidden="true"></i> Diseños impactantes y funcionales</li>
+                            <li><i class="fas fa-check-circle" aria-hidden="true"></i> Materiales resistentes y sostenibles</li>
+                            <li><i class="fas fa-check-circle" aria-hidden="true"></i> Ejecución puntual y profesional</li>
+                        </ul>
+                    </div>
+                    <div class="stats-container">
+                        <div class="experience-badge">
+                            <span>20+</span>
+                            <p>Años de experiencia en el sector</p>
+                        </div>
+                        <div class="experience-badge">
+                            <span>250+</span>
+                            <p>Proyectos completados</p>
+                        </div>
+                        <div class="experience-badge">
+                            <span>98%</span>
+                            <p>Clientes satisfechos</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-<!-- Sección Galería -->
-<section id="gallery" class="gallery">
-  <div class="gallery-header">
-    <h2>Trabajos Recientes</h2>
-    <p class="gallery-subtitle">Capturas de nuestros proyectos</p>
-  </div>
+        <section id="process" class="process-section">
+            <div class="process-container">
+                <div class="section-header">
+                    <h2>Nuestro Proceso Creativo</h2>
+                    <p class="subtitle">Cómo convertimos las ideas en experiencias memorables</p>
+                    <div class="header-divider">
+                        <div class="divider-line"></div>
+                        <div class="divider-icon">
+                            <i class="fas fa-lightbulb" aria-hidden="true"></i>
+                        </div>
+                        <div class="divider-line"></div>
+                    </div>
+                </div>
 
-  <!-- Swiper Container -->
-  <div class="swiper-container">
-    <div class="swiper mySwiper">
-      <div class="swiper-wrapper">
+                <div class="process-steps">
+                    <!-- Paso 1 -->
+                    <div class="step">
+                        <div class="step-content">
+                            <div class="step-number">1</div>
+                            <div class="step-icon">
+                                <i class="fas fa-comments" aria-hidden="true"></i>
+                            </div>
+                            <h3>Consulta Inicial</h3>
+                            <p>Analizamos tus necesidades y objetivos de marca</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Paso 2 -->
+                    <div class="step">
+                        <div class="step-content">
+                            <div class="step-number">2</div>
+                            <div class="step-icon">
+                                <i class="fas fa-pencil-ruler" aria-hidden="true"></i>
+                            </div>
+                            <h3>Diseño Conceptual</h3>
+                            <p>Creamos propuestas visuales en 3D personalizadas</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Paso 3 -->
+                    <div class="step">
+                        <div class="step-content">
+                            <div class="step-number">3</div>
+                            <div class="step-icon">
+                                <i class="fas fa-calculator" aria-hidden="true"></i>
+                            </div>
+                            <h3>Valorización</h3>
+                            <p>Elaboramos propuesta económica basada en el diseño</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Paso 4 -->
+                    <div class="step">
+                        <div class="step-content">
+                            <div class="step-number">4</div>
+                            <div class="step-icon">
+                                <i class="fas fa-tools" aria-hidden="true"></i>
+                            </div>
+                            <h3>Desarrollo</h3>
+                            <p>Fabricación con materiales de alta calidad y atención al detalle</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Paso 5 -->
+                    <div class="step">
+                        <div class="step-content">
+                            <div class="step-number">5</div>
+                            <div class="step-icon">
+                                <i class="fas fa-truck" aria-hidden="true"></i>
+                            </div>
+                            <h3>Instalación</h3>
+                            <p>Montaje profesional y eficiente en el lugar del evento</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Paso 6 -->
+                    <div class="step">
+                        <div class="step-content">
+                            <div class="step-number">6</div>
+                            <div class="step-icon">
+                                <i class="fas fa-box-open" aria-hidden="true"></i>
+                            </div>
+                            <h3>Recogida</h3>
+                            <p>Desmontaje del stand en el sitio del evento</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-      
-<!-- Slide 1 -->
+        <section id="gallery" class="gallery">
+            <div class="gallery-header">
+                <h2>Trabajos Recientes</h2>
+                <p class="gallery-subtitle">Capturas de nuestros proyectos</p>
+            </div>
+
+            <!-- Swiper Container -->
+            <div class="swiper-container">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                 <!-- Slide 1 -->
         <div class="swiper-slide">
           <div class="slide-content">
             <div class="image-container">
@@ -782,221 +767,201 @@
             </div>
           </div>
         </div>
-
-        <!-- Más slides pueden agregarse aquí -->
-      </div>
-
-      <!-- Controles -->
-      <div class="swiper-button-next"></div>
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-pagination"></div>
-      
-     
-</section>
-
-<section id="contact" class="contact">
-  <h2 class="section-title">Contáctanos</h2>
-  
-  <div class="contact-description">
-    <p>
-      En <strong>GH Stand</strong> creamos espacios impactantes que conectan con tu público y elevan tu marca. 
-      Somos el aliado que transforma tus ideas en experiencias memorables. 
-      <strong>¡Contáctanos y llevemos tu proyecto al siguiente nivel!</strong>
-    </p>
-  </div>
-
- <form class="contact-form" id="contactForm">
-  <input type="text" id="nombre" placeholder="Nombre completo" required>
-  <input type="email" id="correo" placeholder="Correo electrónico" required>
-  <input type="number" id="telefono" placeholder="Número de teléfono" required>
-  <textarea id="mensaje" placeholder="Escribe tu mensaje aquí..." required></textarea>
-  <button type="submit" class="btn">Enviar mensaje</button>
-</form>
-
-  <div class="contact-info">
-    <p><i class="fas fa-phone-alt"></i> +57 310 5109125</p>
-    <p><i class="fas fa-envelope"></i> info.ghstand@gmail.com</p>
-  </div>
-</section>
-
-
-
-<!-- Sección de Reseñas - Antes del footer -->
-<section id="reviews" class="reviews">
-    <div class="reviews-container">
-        <h2>Lo que dicen nuestros clientes</h2>
-        <p class="reviews-subtitle">Tu opinión nos ayuda a seguir mejorando</p>
-        
-        <div class="reviews-content">
-            <div class="reviews-text">
-                <i class="fas fa-quote-left quote-icon"></i>
-                <p>En GH Stand valoramos cada experiencia compartida con nuestros clientes. Nos enorgullece haber creado stands y eventos que superan expectativas.</p>
-                
-                <div class="rating">
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
+                      
                     </div>
-                    <p>Basado en <strong>25+ reseñas</strong> en Google</p>
+
+                    <!-- Controles -->
+                    <div class="swiper-button-next" aria-label="Siguiente imagen"></div>
+                    <div class="swiper-button-prev" aria-label="Imagen anterior"></div>
+                    <div class="swiper-pagination"></div>
                 </div>
             </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2 class="section-title">Contáctanos</h2>
             
-            <div class="cta-review">
-                <h3>¿Has trabajado con nosotros?</h3>
-                <p>Comparte tu experiencia y ayúdanos a seguir creciendo</p>
-                <a href="https://g.page/r/CS2wDxaEkiggEAI/review" target="_blank" class="btn btn-review">
-                    <i class="fab fa-google"></i> Dejar reseña en Google
+            <div class="contact-description">
+                <p>
+                    En <strong>GH Stand</strong> creamos espacios impactantes que conectan con tu público y elevan tu marca. 
+                    Somos el aliado que transforma tus ideas en experiencias memorables. 
+                    <strong>¡Contáctanos y llevemos tu proyecto al siguiente nivel!</strong>
+                </p>
+            </div>
+
+            <form class="contact-form" id="contactForm">
+                <input type="text" id="nombre" placeholder="Nombre completo" required aria-label="Nombre completo">
+                <input type="email" id="correo" placeholder="Correo electrónico" required aria-label="Correo electrónico">
+                <input type="tel" id="telefono" placeholder="Número de teléfono" required aria-label="Número de teléfono">
+                <textarea id="mensaje" placeholder="Escribe tu mensaje aquí..." required aria-label="Mensaje"></textarea>
+                <button type="submit" class="btn">Enviar mensaje</button>
+            </form>
+
+            <div class="contact-info">
+                <p><i class="fas fa-phone-alt" aria-hidden="true"></i> +57 310 5109125</p>
+                <p><i class="fas fa-envelope" aria-hidden="true"></i> info.ghstand@gmail.com</p>
+            </div>
+        </section>
+
+        <section id="reviews" class="reviews">
+            <div class="reviews-container">
+                <h2>Lo que dicen nuestros clientes</h2>
+                <p class="reviews-subtitle">Tu opinión nos ayuda a seguir mejorando</p>
+                
+                <div class="reviews-content">
+                    <div class="reviews-text">
+                        <i class="fas fa-quote-left quote-icon" aria-hidden="true"></i>
+                        <p>En GH Stand valoramos cada experiencia compartida con nuestros clientes. Nos enorgullece haber creado stands y eventos que superan expectativas.</p>
+                        
+                        <div class="rating">
+                            <div class="stars">
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                            </div>
+                            <p>Basado en <strong>25+ reseñas</strong> en Google</p>
+                        </div>
+                    </div>
+                    
+                    <div class="cta-review">
+                        <h3>¿Has trabajado con nosotros?</h3>
+                        <p>Comparte tu experiencia y ayúdanos a seguir creciendo</p>
+                        <a href="https://g.page/r/CS2wDxaEkiggEAI/review" target="_blank" rel="noopener noreferrer" class="btn btn-review">
+                            <i class="fab fa-google" aria-hidden="true"></i> Dejar reseña en Google
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer" class="footer">
+        <div class="footer-content">
+            <!-- Logo y descripción -->
+            <div class="footer-brand">
+                <img src="img/logo.png" alt="GH Stand - Expertos en stands" width="150" height="75" class="footer-logo" loading="lazy">
+                <p class="footer-description">Líderes en diseño y construcción de stands personalizados en Cartagena</p>
+            </div>
+
+            <!-- Redes Sociales -->
+            <div class="social-links">
+                <a href="https://www.facebook.com/ghstand/reels/?_rdr" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                    <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                </a>
+                <a href="https://www.instagram.com/gh.stand/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                    <i class="fab fa-instagram" aria-hidden="true"></i>
+                </a>
+                <a href="https://www.google.com/search?q=GH+Stand" target="_blank" rel="noopener noreferrer" aria-label="Google Business">
+                    <i class="fab fa-google" aria-hidden="true"></i>
+                </a>
+                <a href="https://wa.me/573105109125" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+                    <i class="fab fa-whatsapp" aria-hidden="true"></i>
+                </a>
+                <a href="https://www.google.com/maps/place/GH+Stand/@10.409895,-75.514327,17z/data=!3m1!4b1!4m6!3m5!1s0x8ef625de06cd4257:0x20289284160fb02d!8m2!3d10.409895!4d-75.514327!16s%2Fg%2F11fsyyf5s2?entry=ttu&g_ep=EgoyMDI1MDUxNS4xIKXMDSoASAFQAw%3D%3D" 
+                    target="_blank" rel="noopener noreferrer" aria-label="Ubicación GH Stand">
+                    <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
                 </a>
             </div>
-        </div>
-    </div>
-</section>
 
-<footer  id="footer" class="footer">
-    <div class="footer-content">
-    
-        <!-- Logo y descripción -->
-        <div class="footer-brand">
-            <img src="img/logo.png" alt="GH Stand - Expertos en stands" class="footer-logo">
-             <p class="footer-description">Líderes en diseño y construcción de stands personalizados en Cartagena</p>
+            <!-- Derechos de autor -->
+            <div class="legal">
+                <p>&copy; <span id="current-year">2025</span> GH Stand. Todos los derechos reservados. Cartagena, Colombia</p>
+            </div>
         </div>
 
-        <!-- Redes Sociales -->
-        <div class="social-links">
-            <a href="https://www.facebook.com/ghstand/reels/?_rdr" target="_blank" aria-label="Facebook">
-                <i class="fab fa-facebook-f"></i>
-            </a>
-            <a href="https://www.instagram.com/gh.stand/" target="_blank" aria-label="Instagram">
-                <i class="fab fa-instagram"></i>
-            </a>
-            <a href="https://www.google.com/search?q=GH+Stand" target="_blank" aria-label="Google Business">
-                <i class="fab fa-google"></i>
-            </a>
-            <a href="https://wa.me/573105109125" target="_blank" aria-label="WhatsApp">
-                <i class="fab fa-whatsapp"></i>
-            </a>
-            <!-- Nuevo botón de ubicación -->
-            <a href="https://www.google.com/maps/place/GH+Stand/@10.409895,-75.514327,17z/data=!3m1!4b1!4m6!3m5!1s0x8ef625de06cd4257:0x20289284160fb02d!8m2!3d10.409895!4d-75.514327!16s%2Fg%2F11fsyyf5s2?entry=ttu&g_ep=EgoyMDI1MDUxNS4xIKXMDSoASAFQAw%3D%3D" 
-                target="_blank" rel="noopener noreferrer" aria-label="Ubicación GH Stand">
-                <i class="fas fa-map-marker-alt"></i>
-            </a>
-        </div>
+        <!-- Botón flotante de WhatsApp -->
+        <a href="https://wa.me/573105109125?text=%21Hola%21%20vengo%20desde%20la%20pagina%20web%20y%20estoy%20interesa%40%20en%20cotizar%20un%20stand%20con%20ustedes%21" 
+           class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chat WhatsApp">
+            <i class="fab fa-whatsapp" aria-hidden="true"></i>
+        </a>
+    </footer>
 
-        <!-- Derechos de autor -->
-        <div class="legal">
-            <p>&copy; 2025 GH Stand. Todos los derechos reservados. Cartagena, Colombia</p>
+    <!-- Scripts optimizados -->
+    <script>
+        // Cargar scripts críticos de forma asíncrona
+        function loadScript(src, callback) {
+            var script = document.createElement('script');
+            script.src = src;
+            script.async = true;
+            script.defer = true;
+            if (callback) script.onload = callback;
+            document.body.appendChild(script);
+        }
+        
+        // Actualizar año en el footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+        
+        // Cargar scripts no críticos
+        window.addEventListener('load', function() {
+            loadScript('https://unpkg.com/aos@2.3.1/dist/aos.js', function() {
+                AOS.init({
+                    duration: 800,
+                    once: true
+                });
+            });
             
-        </div>
-    </div>
-
-    <!-- Botón flotante de WhatsApp (versión móvil) -->
-    <a href="https://wa.me/573105109125?text=%21Hola%21%20vengo%20desde%20la%20pagina%20web%20y%20estoy%20interesa%40%20en%20cotizar%20un%20stand%20con%20ustedes%21" 
-       class="whatsapp-float" target="_blank" aria-label="Chat WhatsApp">
-        <i class="fab fa-whatsapp"></i>
-    </a>
-</footer>
-
-<!-- JavaScript con animaciones mejoradas -->
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-  const swiper = new Swiper('.mySwiper', {
-    // Configuración básica
-    loop: true,
-    lazy: true,
-    grabCursor: true,
-    centeredSlides: true,
-    slidesPerView: 'auto',
-    spaceBetween: 30,
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false,
-      pauseOnMouseEnter: true,
-    },
-    
-    // Efecto de transición
-    effect: 'slide',
-    speed: 600,
-    
-    // Paginación
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-      dynamicBullets: true,
-      dynamicMainBullets: 3,
-    },
-    
-    // Navegación
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-    
-    // Breakpoints responsive
-    breakpoints: {
-      320: {
-        slidesPerView: 1,
-        spaceBetween: 20
-      },
-      768: {
-        slidesPerView: 'auto',
-        spaceBetween: 30
-      }
-    }
-  });
-  
-  // Pausar al hacer hover (solo desktop)
-  if (window.innerWidth > 768) {
-    const slides = document.querySelectorAll('.swiper-slide');
-    
-    slides.forEach(slide => {
-      slide.addEventListener('mouseenter', () => {
-        swiper.autoplay.stop();
-      });
-      
-      slide.addEventListener('mouseleave', () => {
-        swiper.autoplay.start();
-      });
-    });
-  }
-  
-  // Reiniciar al cambiar de ventana
-  document.addEventListener('visibilitychange', function() {
-    if (document.visibilityState === 'visible') {
-      swiper.autoplay.start();
-    } else {
-      swiper.autoplay.stop();
-    }
-  });
-});
-</script>
-
-
-
-<script>
-    AOS.init({
-        duration: 800,
-        once: true  // Las animaciones solo se ejecutan una vez
-    });
-</script>
-
-
-    <!-- Scripts -->
-
-<script src="js/menu.js" defer></script>
-
-<script src="js/scroll.js" defer></script>
-<script src="js/swiper.js" defer></script>
-<script src="js/logoEffects.js" defer></script>
-<script src="js/headerLight.js" defer></script>
-<script src="js/navHoverEffects.js" defer></script>
-<script src="js/contac.js" defer></script>
-
-
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-
+            loadScript('https://unpkg.com/swiper/swiper-bundle.min.js', function() {
+                initSwiper();
+            });
+            
+            // Cargar scripts propios
+            loadScript('js/menu.js');
+            loadScript('js/scroll.js');
+            loadScript('js/logoEffects.js');
+            loadScript('js/headerLight.js');
+            loadScript('js/navHoverEffects.js');
+            loadScript('js/contac.js');
+        });
+        
+        function initSwiper() {
+            const swiper = new Swiper('.mySwiper', {
+                loop: true,
+                lazy: true,
+                grabCursor: true,
+                centeredSlides: true,
+                slidesPerView: 'auto',
+                spaceBetween: 30,
+                autoplay: {
+                    delay: 5000,
+                    disableOnInteraction: false,
+                    pauseOnMouseEnter: true,
+                },
+                effect: 'slide',
+                speed: 600,
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                    dynamicBullets: true,
+                    dynamicMainBullets: 3,
+                },
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+                breakpoints: {
+                    320: { slidesPerView: 1, spaceBetween: 20 },
+                    768: { slidesPerView: 'auto', spaceBetween: 30 }
+                }
+            });
+            
+            if (window.innerWidth > 768) {
+                const slides = document.querySelectorAll('.swiper-slide');
+                slides.forEach(slide => {
+                    slide.addEventListener('mouseenter', () => swiper.autoplay.stop());
+                    slide.addEventListener('mouseleave', () => swiper.autoplay.start());
+                });
+            }
+            
+            document.addEventListener('visibilitychange', function() {
+                if (document.visibilityState === 'visible') {
+                    swiper.autoplay.start();
+                } else {
+                    swiper.autoplay.stop();
+                }
+            });
+        }
+    </script>
 </body>
 </html>
