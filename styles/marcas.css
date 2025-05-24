@@ -1,3 +1,5 @@
+
+
 .clientes-carousel {
   padding: 3rem 1rem;
   background-color: #f9f9f9;
@@ -13,11 +15,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100px; /* Altura fija para todos los slides */
 }
 
 .clientesSwiper img {
-  max-width: 120px;
-  height: auto;
+  max-width: 120px; /* Ancho máximo */
+  max-height: 80px; /* Altura máxima */
+  width: auto; /* Mantiene proporción */
+  height: auto; /* Mantiene proporción */
+  object-fit: contain; /* Asegura que la imagen se ajuste sin distorsión */
   filter: grayscale(100%);
   opacity: 0.7;
   transition: all 0.3s ease;
@@ -26,4 +32,13 @@
 .clientesSwiper img:hover {
   filter: grayscale(0%);
   opacity: 1;
+  transform: scale(1.05); /* Efecto sutil de zoom al hover */
+}
+
+.clientesSwiper .swiper-slide {
+  transition: transform 0.3s ease;
+}
+
+.clientesSwiper .swiper-slide:hover {
+  transform: translateY(-5px); /* Efecto de levitación sutil */
 }
