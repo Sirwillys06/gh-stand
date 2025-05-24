@@ -126,6 +126,7 @@
   <link rel="stylesheet" href="/styles/gallery.css">
   <link rel="stylesheet" href="styles/header.css">
   <link rel="stylesheet" href="styles/proceso.css">
+  <link rel="stylesheet" href="styles/marcas.css">
 
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
@@ -903,6 +904,31 @@ class="swiper-lazy"/>
                 </div>
             </div>
         </section>
+
+
+
+
+
+        <section class="clientes-carousel">
+  <h2 class="section-title">Marcas que han confiado en nosotros</h2>
+  <div class="swiper clientesSwiper">
+    <div class="swiper-wrapper">
+    
+      <div class="swiper-slide"><img src="img/logos/lepine.png" alt="Marca 2" loading="lazy"></div>
+      <div class="swiper-slide"><img src="img/logos/marca3.webp" alt="Marca 3" loading="lazy"></div>
+      <div class="swiper-slide"><img src="img/logos/marca4.webp" alt="Marca 4" loading="lazy"></div>
+      <div class="swiper-slide"><img src="img/logos/marca5.webp" alt="Marca 5" loading="lazy"></div>
+          <div class="swiper-slide"><img src="img/logos/marca4.webp" alt="Marca 4" loading="lazy"></div>
+      <div class="swiper-slide"><img src="img/logos/marca5.webp" alt="Marca 5" loading="lazy"></div>
+          <div class="swiper-slide"><img src="img/logos/marca4.webp" alt="Marca 4" loading="lazy"></div>
+      <div class="swiper-slide"><img src="img/logos/marca5.webp" alt="Marca 5" loading="lazy"></div>
+          <div class="swiper-slide"><img src="img/logos/marca4.webp" alt="Marca 4" loading="lazy"></div>
+      <div class="swiper-slide"><img src="img/logos/marca5.webp" alt="Marca 5" loading="lazy"></div>
+      <!-- Agrega más logos si quieres -->
+    </div>
+  </div>
+</section>
+
     </main>
 
     <footer id="footer" class="footer">
@@ -970,9 +996,26 @@ class="swiper-lazy"/>
                 });
             });
             
-            loadScript('https://unpkg.com/swiper/swiper-bundle.min.js', function() {
-                initSwiper();
-            });
+          loadScript('https://unpkg.com/swiper/swiper-bundle.min.js', function() {
+    initSwiper();
+
+    new Swiper('.clientesSwiper', {
+        loop: true,
+        slidesPerView: 'auto',
+        spaceBetween: 40,
+        grabCursor: true,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false
+        },
+        breakpoints: {
+            320: { slidesPerView: 2 },
+            768: { slidesPerView: 4 },
+            1024: { slidesPerView: 6 }
+        }
+    });
+});
+
             
             // Cargar scripts propios
             loadScript('js/menu.js');
@@ -1042,6 +1085,7 @@ class="swiper-lazy"/>
       <script src="/js/navHoverEffects.js"></script>
        <script src="/js/scroll.js"></script>
         <script src="/js/swiper.js"></script>
+         <script src="/js/marcas.js"></script>
 
 
 
